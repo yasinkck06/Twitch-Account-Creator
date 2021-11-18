@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import Select
 import time
 import random,string
 print("Yasin + Oberonskiiv2 Twitch Account Creator V2")
-print("For help DM: yasintrv2#0001 or Oberonskiiv2#0001 on Discord")
+print("For help DM: Yasin#0009 or Oberonskiiv2#4620 on Discord")
 createdaccounts = 0
 howmany = int(input("How many accounts you want to generate: "))
 howcooldown = int(input("How many seconds the cooldown of creating Accounts should be: "))
