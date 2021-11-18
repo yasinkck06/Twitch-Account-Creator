@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import time
 import random,string
+import os
 print("Yasin + Oberonskiiv2 Twitch Account Creator V2")
 print("For help DM: Yasin#0009 or Oberonskiiv2#4620 on Discord")
 createdaccounts = 0
@@ -51,6 +52,7 @@ while createdaccounts < howmany:
     time.sleep(3)
     driver.find_element_by_xpath(
         '/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[5]/button/div/div').click()
+    os.system('cls')
     input("Hit enter when your done solving the captcha.")
 
     driver.refresh()
