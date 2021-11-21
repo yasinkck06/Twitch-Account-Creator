@@ -47,6 +47,7 @@ while createdaccounts < howmany:
     driver.find_element_by_xpath(
         '/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[3]/div/div[2]/div[3]/div/input').send_keys(
         "1998")
+    driver.find_element_by_xpath('/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[4]/div/div[2]/button/div/div[2]').click()
     driver.find_element_by_xpath('//*[@id="email-input"]').send_keys(email)
 
     time.sleep(3)
@@ -54,6 +55,7 @@ while createdaccounts < howmany:
         '/html/body/div[3]/div/div/div/div/div/div[1]/div/div/div[3]/form/div/div[5]/button/div/div').click()
     os.system('cls')
     input("Hit enter when your done solving the captcha.")
+    os.system('cls')
 
     driver.refresh()
     time.sleep(1)
@@ -69,7 +71,7 @@ while createdaccounts < howmany:
     accountlist.write(accountvalue)
 
     print("Account succesfully created")
-    print('Waiting ' + str(howcooldown) + 'seconds')
+    print('Waiting ' + str(howcooldown) + ' seconds')
     time.sleep(howcooldown)
 
 else:
